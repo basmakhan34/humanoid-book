@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkhumanoid_book=globalThis.webpackChunkhumanoid_book||[]).push([[5166],{425:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/humanoid-book/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
