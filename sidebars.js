@@ -18,5 +18,12 @@ module.exports = {
         'humanoid/mechanics-and-motors',
       ],
     },
+
+    // ✅ Chatbot link (NEW – nothing else changed)
+    {
+      type: 'link',
+      label: '🤖 Ask Humanoid AI Chatbot',
+      href: 'http://localhost:8501',
+    },
   ],
 };
