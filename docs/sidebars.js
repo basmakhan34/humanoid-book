@@ -19,10 +19,18 @@ module.exports = {
       ],
     },
 
+<<<<<<< HEAD
        {
+=======
+    {
+>>>>>>> c485da5 (Added AI Chatbot button)
   type: 'link',
   label: '🤖 AI Chatbot',
   href: 'https://github.com/basmakhan34/humanoid-book',
 },
+<<<<<<< HEAD
+=======
+
+>>>>>>> c485da5 (Added AI Chatbot button)
   ],
 };
