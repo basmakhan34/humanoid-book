@@ -19,11 +19,10 @@ module.exports = {
       ],
     },
 
-    // ✅ Chatbot link (NEW – nothing else changed)
-    {
-      type: 'link',
-      label: '🤖 Ask Humanoid AI Chatbot',
-      href: 'http://localhost:8501',
-    },
+       {
+  type: 'link',
+  label: '🤖 AI Chatbot',
+  href: 'https://github.com/basmakhan34/humanoid-book',
+},
   ],
 };
