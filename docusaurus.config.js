@@ -1,5 +1,5 @@
 // @ts-check
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -7,12 +7,12 @@ const config = {
   tagline: 'Learn about humanoid robots',
   favicon: 'img/favicon.ico',
 
-  // GitHub Pages deploy ke liye URL aur baseUrl
-  url: 'https://basmakhan34.github.io', // GitHub Pages URL
-  baseUrl: '/humanoid-book/',           // Repo name
+  // GitHub Pages
+  url: 'https://basmakhan34.github.io',
+  baseUrl: '/humanoid-book/',
 
-  organizationName: 'basmakhan34',  // GitHub username
-  projectName: 'humanoid-book',     // Repo name
+  organizationName: 'basmakhan34',
+  projectName: 'humanoid-book',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -25,11 +25,10 @@ const config = {
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           path: 'docs',
-          routeBasePath: '/', // Homepage pe docs show honge
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/basmakhan34/humanoid-book/edit/main/',
         },
@@ -44,84 +43,50 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      image: 'img/docusaurus-social-card.jpg',
-      colorMode: {
-        respectPrefersColorScheme: true,
+  themeConfig: ({
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
+    navbar: {
+      title: 'Humanoid Robotics Book',
+      logo: {
+        alt: 'Humanoid Logo',
+        src: 'img/logo.svg',
       },
-      navbar: {
-        title: 'Humanoid Robotics Book',
-        logo: {
-          alt: 'Humanoid Logo',
-          src: 'img/logo.svg',
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Humanoid Book',
         },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Humanoid Book',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/basmakhan34/humanoid-book',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Humanoid Book',
-                to: '/',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/basmakhan34/humanoid-book',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Basma Khan. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+        { to: '/blog', label: 'Blog', position: 'left' },
+
+        // ✅ AI CHATBOT BUTTON (YAHAN HAI)
+        {
+          href: 'https://your-streamlit-chatbot-link-here',
+          label: '🤖 AI Chatbot',
+          position: 'right',
+        },
+
+        {
+          href: 'https://github.com/basmakhan34/humanoid-book',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+
+    footer: {
+      style: 'dark',
+      copyright: `Copyright © ${new Date().getFullYear()} Basma Khan`,
+    },
+
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  }),
 };
 
 export default config;
