@@ -62,9 +62,9 @@ const config = {
         },
         { to: '/blog', label: 'Blog', position: 'left' },
 
-        // ✅ AI CHATBOT BUTTON (YAHAN HAI)
+        // ✅ AI CHATBOT BUTTON 
         {
-          href: 'https://your-streamlit-chatbot-link-here',
+          href: 'http://localhost:8501',
           label: '🤖 AI Chatbot',
           position: 'right',
         },
